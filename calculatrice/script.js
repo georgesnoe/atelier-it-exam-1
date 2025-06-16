@@ -18,22 +18,26 @@ juger.onclick = () => {
         switch (operateur.value) {
             case '+':
                 op = "+";
-                resultat = parseFloat(nombre_1) + parseFloat(nombre_2);
+                resultat = parseFloat(nombre_1.value) + parseFloat(nombre_2.value);
                 break;
             case '-':
                 op = "-";
-                resultat = parseFloat(nombre_1) - parseFloat(nombre_2);
+                resultat = parseFloat(nombre_1.value) - parseFloat(nombre_2.value);
                 break;
             case '*':
                 op = "*";
-                resultat = parseFloat(nombre_1) * parseFloat(nombre_2);
+                resultat = parseFloat(nombre_1.value) * parseFloat(nombre_2.value);
                 break;
             case '/':
                 op = "/";
-                resultat = parseFloat(nombre_1) / parseFloat(nombre_2);
+                resultat = parseFloat(nombre_1.value) / parseFloat(nombre_2.value);
+                break;
+            default:
+                alert("Une erreur s'est produite");
+                return;
                 break;
         }
-        afficherResultat(`${nombre_1} ${op} ${nombre_2}`, resultat);
+        afficherResultat(`${nombre_1.value} ${op} ${nombre_2.value}`, resultat);
     }
 }
 
