@@ -12,7 +12,7 @@ juger.onclick = () => {
         let saisie = valeur.value.trim();
         // Valeur inversée de la saisie
         let reverseSaisie = "";
-        for (let i = saisie.length; i > 0; i++) {
+        for (let i = saisie.length; i > 0; i--) {
             // Les indices vont de 0 à (n - 1)
             reverseSaisie += saisie[i - 1];
         }
