@@ -46,7 +46,8 @@ p {
     text-align: center;
 }
 
-#valeur {
+input,
+select {
     width: 100%;
     background-color: transparent;
     border: 0;
@@ -86,7 +87,8 @@ button:hover {
     background-color: #fed;
 }
 
-.erreur {
+.erreur_1,
+.erreur_2 {
     position: fixed;
     top: -10rem;
     left: 50%;
