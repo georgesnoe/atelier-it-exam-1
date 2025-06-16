@@ -42,6 +42,6 @@ function afficherPositif(valeur) {
 
 function afficherNegatif(valeur) {
     jugement.innerHTML = `
-        <p>${valeur} n'est pas un palindrome 🎊</p>
+        <p>${valeur} n'est pas un palindrome 💔</p>
     `;
 }
