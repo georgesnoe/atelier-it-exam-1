@@ -78,9 +78,12 @@ button:hover {
 
 .jugement {
     margin-top: 0.5rem;
-    height: 0rem;
-    background-color: #fed;
+    padding: 16px;
     border-radius: 1rem;
+}
+
+.jugement p {
+    background-color: #fed;
 }
 
 .erreur {
