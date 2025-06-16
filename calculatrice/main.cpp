@@ -33,6 +33,11 @@ int main()
     case '/':
         resultat = nombre_1 / nombre_2;
         break;
+    default:
+        std::cout << std::endl
+                  << "Une erreur s'est produite" << std::endl;
+        return -1;
+        break;
     }
 
     std::cout << std::endl
