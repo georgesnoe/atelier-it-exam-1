@@ -1,6 +1,7 @@
 let juger = document.getElementById("juger");
 let valeur = document.getElementById("valeur");
 let erreur = document.getElementById("erreur");
+let jugement = document.getElementById("jugement");
 
 juger.onclick = () => {
     // Si l'utilisateur n'a saisi aucune valeur
@@ -17,7 +18,7 @@ juger.onclick = () => {
         }
         // Comparer les valeurs
         if (saisie == reverseSaisie) {
-            afficherPositif();
+            afficherPositif(saisie);
         } else {
             afficherNegatif();
         }
@@ -33,6 +34,10 @@ function afficherErreur() {
     }, 2000);
 }
 
-function afficherPositif() { }
+function afficherPositif(valeur) {
+    jugement.innerHTML = `
+        <p>${valeur} est un palindrome 🎊</p>
+    `;
+}
 
 function afficherNegatif() { }
