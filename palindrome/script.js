@@ -24,7 +24,14 @@ juger.onclick = () => {
     }
 }
 
-function afficherErreur() { }
+// Faire apparaitre l'erreur puis la faire disparaitre
+// après 2 secondes
+function afficherErreur() {
+    erreur.style.top = "1rem";
+    setTimeout(() => {
+        erreur.style.top = "10rem";
+    }, 2000);
+}
 
 function afficherPositif() { }
 
