@@ -20,7 +20,7 @@ juger.onclick = () => {
         if (saisie == reverseSaisie) {
             afficherPositif(saisie);
         } else {
-            afficherNegatif();
+            afficherNegatif(saisie);
         }
     }
 }
@@ -40,4 +40,8 @@ function afficherPositif(valeur) {
     `;
 }
 
-function afficherNegatif() { }
+function afficherNegatif(valeur) {
+    jugement.innerHTML = `
+        <p>${valeur} est un palindrome 🎊</p>
+    `;
+}
