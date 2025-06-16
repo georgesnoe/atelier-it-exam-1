@@ -29,7 +29,7 @@ juger.onclick = () => {
 function afficherErreur() {
     erreur.style.top = "1rem";
     setTimeout(() => {
-        erreur.style.top = "10rem";
+        erreur.style.top = "-10rem";
     }, 2000);
 }
 
