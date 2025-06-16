@@ -13,3 +13,4 @@ L'utilisateur doit saisir un mot puis une action lui fera afficher si le mot est
 
 ## Une calculatrice simple
 L'utilisateur doit saisir deux nombres puis choisir une opération (addition, multiplication, soustraction, division). Le programme devra lui afficher le résultat
+![Vue de la Calculatrice](Calculatrice.PNG)
